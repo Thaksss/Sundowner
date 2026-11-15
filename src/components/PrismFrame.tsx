@@ -1,0 +1,5 @@
+﻿import {useRef,type ReactNode} from 'react'
+import {motion,useMotionValue,useSpring,useReducedMotion} from 'framer-motion'
+/** Prismatic rim and gentle perspective inspired by the supplied Warp Carousel.
+ * Keeps live controls as semantic HTML instead of painting them into a canvas. */
+export default function PrismFrame({children,className='',tone='cyan'}:{children:ReactNode;className?:string;tone?:'cyan'|'ember'|'violet'}){const ref=useRef<HTMLElement>(null),x=useMotionValue(0),y=useMotionValue(0),rx=useSpring(x,{stiffness:140,damping:24}),ry=useSpring(y,{stiffness:140,damping:24});const reduced=useReducedMotion();return <motion.article ref={ref} className={`prism-frame tone-${tone} ${className}`} style={reduced?{}:{rotateX:rx,rotateY:ry,transformPerspective:1200}} onPointerMove={e=>{if(reduced||e.pointerType!=='mouse')return;const r=ref.current?.getBoundingClientRect();if(r){x.set(-(e.clientY-r.top-r.height/2)/r.height*3);y.set((e.clientX-r.left-r.width/2)/r.width*3)}}} onPointerLeave={()=>{x.set(0);y.set(0)}}><div className="prism-glow" aria-hidden="true"/>{children}</motion.article>}

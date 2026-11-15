@@ -1,0 +1,16 @@
+﻿3D MODEL ATTRIBUTION
+
+"Realistic Human Heart" (https://skfb.ly/oyBCT) by neshallads
+Licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+Changes: scaled, positioned within a conceptual body and animated.
+
+"Free Pack - Human Skeleton" (https://skfb.ly/pBZ7z) by PolyOne Studio
+Licensed under Creative Commons Attribution 4.0 International:
+https://creativecommons.org/licenses/by/4.0/
+Changes: outline shell hidden, scaled and positioned within a conceptual body.
+
+Placement is illustrative and not anatomically registered to the astronaut suit.
+
+Visual inspiration: Mosaic Prompt Template by Kedhareswer Naidu
+https://kedhar.pages.dev — MIT, supplied by the user.
