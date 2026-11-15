@@ -10,3 +10,5 @@ createRoot(document.getElementById('root')).render(
 )
 
 import './enhancements.css'
+
+import './responsive.css'
